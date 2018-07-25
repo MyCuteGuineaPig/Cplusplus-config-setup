@@ -13,7 +13,8 @@ Go to CMake Download [https://cmake.org/download/](https://cmake.org/download/)
 
 安装后之后点cmake Gui 就可以使用了
 
-### __2. Download & Install Google Protobuf, [参考](https://blog.csdn.net/qing666888/article/details/79137963) </br> 
+### __2. Download & Install Google Protobuf__ , 
+[参考](https://blog.csdn.net/qing666888/article/details/79137963) </br> 
 <ol><li>
 Go to CMake Download [https://github.com/google/protobuf/releases/tag/v3.6.0](https://github.com/google/protobuf/releases/tag/v3.6.0) </br> 
 选择cpp.zip，下载，之后解压</br> 
@@ -33,11 +34,13 @@ Go to CMake Download [https://github.com/google/protobuf/releases/tag/v3.6.0](ht
 </li><li>装好之后，会生成一个带sln 和很多VC++ project的文件在文件夹中</br>
 <img src="https://github.com/beckswu/Cplusplus-notes/blob/master/pic/Capture2.PNG" width="480" height="230">
 
-</li><ol>
-### __3. Generate protoc.exe, [参考](https://blog.csdn.net/qing666888/article/details/79137963) </br> 
+</li></ol>
+### __3. Compile protobuf.sln__
+[参考](https://www.youtube.com/watch?v=Vs-nTZb7oj8) </br> 
+<ol><li>在生成的文件夹里打开protobuf.sln,  然后build libprotobuf, libprotoc, protoc
+<img src="https://github.com/beckswu/Cplusplus-notes/blob/master/pic/Capture3.PNG" width="480" height="230">
 
-```
-> cd vcpkg
-PS> .\vcpkg install cpprestsdk cpprestsdk:x64-windows
-PS> .\vcpkg install boost:x86-windows
-```
+</li><li>build成功后，会在debug里面有个protoc.exe生成</br>
+<img src="https://github.com/beckswu/Cplusplus-notes/blob/master/pic/Capture4.PNG" width="480" height="230">
+
+</li></ol>
