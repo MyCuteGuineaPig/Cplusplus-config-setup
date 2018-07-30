@@ -55,3 +55,36 @@ b. 打开cmd, cd现在的文件夹, 再输入protoc -I=. --cpp_out=. A.proto, .�
 c. 一个.pb.cc 和一个.pb.h 就会生成在directiory 文件夹里面</br> 
   <img src="https://github.com/beckswu/Cplusplus-notes/blob/master/pic/Capture7.PNG" width="600" height="150">
 
+### __5. Install Rabbitmq C (using vcpkg)__
+
+```
+use powershell 
+
+cd "C:\vcpkg"
+.\vcpkg install librabbitmq:x86-windows
+
+```
+
+### __6. Install Simple AMQP Client C++__
+
+```
+use powershell 
+
+git clone git://github.com/alanxz/SimpleAmqpClient.git
+cd SimpleAmqpClient
+git submodule init
+git submodule update
+
+cd C:\
+mkdir simpleamqpclient-build
+cd C:\Divisa\simpleamqpclient-build
+
+cmake -DBOOST_ROOT=C:\vcpkg\installed\x86-windows -DBOOST_INCLUDEDIR=C:\vcpkg\installe
+d\x86-windows\include\boost -DBOOST_LIBRARYDIR=C:\vcpkg\installed\x86-windows\lib -DRabbitmqc_ROOT=C:\vcpkg\installed\x86-w
+indows  -DRabbitmqc_INCLUDE_DIR=C:\vcpkg\installed\x86-windows\include -DRabbitmqc_LIBRARY=C:\vcpkg\packages\librabbitmq_x8
+6-windows\lib  C:\SimpleAmqpClient
+
+//需要list path的位置，有可能找不到
+
+```
+
