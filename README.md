@@ -51,7 +51,7 @@ b. 打开cmd, cd现在的文件夹, 再输入protoc -I=. --cpp_out=. A.proto, .�
 > protoc -I=$SRC_DIR --cpp_out=$DST_DIR $SRC_DIR/addressbook.proto
 
 C#
-> proto --proto_path=. --csharp_out=. A.proto
+> protoc --proto_path=. --csharp_out=. A.proto
 
 ```
 <img src="https://github.com/beckswu/Cplusplus-notes/blob/master/pic/Capture6.PNG" width="400" height="100">
